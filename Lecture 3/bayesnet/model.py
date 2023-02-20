@@ -16,7 +16,7 @@ maintenance = Node(ConditionalProbabilityTable([
     ["heavy", "yes", 0.1],
     ["heavy", "no", 0.9]
 ], [rain.distribution]), name="maintenance")
-
+ 
 # Train node is conditional on rain and maintenance
 train = Node(ConditionalProbabilityTable([
     ["none", "yes", "on time", 0.8],
